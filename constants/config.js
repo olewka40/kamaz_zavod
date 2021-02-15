@@ -72,7 +72,6 @@ export const models = [
             id: 0,
             serName: "KH",
             enName: "KH",
-            img: "../../../../../images/KH.png",
             model: [
               {
                 id: 0,
@@ -191,7 +190,6 @@ export const models = [
             id: 1,
             serName: "SH",
             enName: "SH",
-            img: "../../../../../images/SH.png",
             model: [
               {
                 id: 0,

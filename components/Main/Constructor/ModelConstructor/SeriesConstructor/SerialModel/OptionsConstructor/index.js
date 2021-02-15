@@ -1,59 +1,45 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
-import { FormContainer } from "../../index";
-import { Button, FormControl, InputLabel, MenuItem } from "@material-ui/core";
-import { StyledButton, StyledSelect } from "../../../../../Constructor/index";
-import { Controller, useForm } from "react-hook-form";
+import { Form, Field } from "react-final-form";
 
-export const OptionsConctructor = ({ equipmentModelName }) => {
-  const [openNextStep, setOpenNextStep] = useState(false);
-  const { control, register, handleSubmit } = useForm();
-
-  const [openNext, setOpenNext] = useState(false);
-  console.log(equipmentModelName.options, 12312312312751286519265192659);
-  const nextStep = (data) => {
-    console.log(data);
-    setTimeout(() => {
-      setOpenNext(!openNext);
-    }, 100);
+export const OptionsConctructor = ({
+  serModConstrRes,
+  serModConstrResArray,
+  setOptionsArray
+}) => {
+  console.log(serModConstrRes);
+  console.log(serModConstrRes);
+  console.log(serModConstrResArray);
+  console.log(setOptionsArray);
+  const onSubmit = values => {
+    setOptionsArray(values);
   };
-  useEffect(() => {
-    setTimeout(() => {
-      setOpenNextStep(!openNextStep);
-    }, 100);
-  }, []);
   return (
-    <>
-      {openNextStep && (
-        <>
-          <form onSubmit={handleSubmit(nextStep)}>
+    <div>
+      <Form
+        onSubmit={onSubmit}
+        initialValues={{ employed: false }}
+        render={({ handleSubmit, form, submitting, pristine, values }) => (
+          <form onSubmit={handleSubmit}>
             <Container>
-              {equipmentModelName.options.map((e) => (
-                <OptionsContainer>
-                  <input
-                    type="checkbox"
-                    placeholder="qwe"
-                    name={e.id}
-                    ref={register}
-                  />
-                  <div> {e.name}</div>
-                  <Cost> - {e.cost}₽</Cost>
-                </OptionsContainer>
+              {serModConstrResArray[0].options.map(e => (
+                <Options>
+                  <label>
+                    {e.name} - {e.cost}
+                  </label>
+                  <Field name={e.name} component="input" type="checkbox" />
+                </Options>
               ))}
             </Container>
-            <Button type="submit">Расчет стоимости</Button>
+            <div className="buttons">
+              <button type="submit" disabled={submitting || pristine}>
+                Submit
+              </button>
+            </div>
           </form>
-          <StyledButton
-            onClick={nextStep}
-            variant="contained"
-            color="primary"
-            type="submit"
-          >
-            Подтвердить
-          </StyledButton>
-        </>
-      )}
-    </>
+        )}
+      />
+    </div>
   );
 };
 
@@ -61,7 +47,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
 `;
-const OptionsContainer = styled.div`
+const Options = styled.div`
   display: flex;
   flex-direction: row;
 `;

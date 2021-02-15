@@ -29,6 +29,7 @@ const GlobalStyle = createGlobalStyle`
 
 const App = () => {
   const [image, setImage] = useState("");
+
   return (
     <DataContext.Provider value={{ image, setImage }}>
       <MainComponent>

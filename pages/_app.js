@@ -29,7 +29,7 @@ const theme = createMuiTheme({
   }
 });
 
-class Telegramm extends App {
+class Kamaz_zavod extends App {
   componentDidMount() {
     const jssStyles = document.querySelector("#jss-server-side");
     if (jssStyles && jssStyles.parentNode)
@@ -52,4 +52,4 @@ class Telegramm extends App {
   }
 }
 
-export default withRouter(Telegramm);
+export default withRouter(Kamaz_zavod);
