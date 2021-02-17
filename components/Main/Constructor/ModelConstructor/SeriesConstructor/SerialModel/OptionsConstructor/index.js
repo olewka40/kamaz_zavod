@@ -7,10 +7,6 @@ export const OptionsConctructor = ({
   serModConstrResArray,
   setOptionsArray
 }) => {
-  console.log(serModConstrRes);
-  console.log(serModConstrRes);
-  console.log(serModConstrResArray);
-  console.log(setOptionsArray);
   const onSubmit = values => {
     setOptionsArray(values);
   };

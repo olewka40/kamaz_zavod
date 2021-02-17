@@ -6,21 +6,21 @@ export const contructorStages = [
     variants: [
       {
         value: 0,
-        label: "4x2",
+        label: "4x2"
       },
       {
         value: 1,
-        label: "6x4",
+        label: "6x4"
       },
       {
         value: 2,
-        label: "6x6",
+        label: "6x6"
       },
       {
         value: 3,
-        label: "8x4",
-      },
-    ],
+        label: "8x4"
+      }
+    ]
   },
   {
     id: 1,
@@ -30,13 +30,13 @@ export const contructorStages = [
     variants: [
       {
         value: 0,
-        label: "От КПП",
+        label: "От КПП"
       },
       {
         value: 1,
-        label: "От ДВС",
-      },
-    ],
+        label: "От ДВС"
+      }
+    ]
   },
   {
     id: 2,
@@ -46,14 +46,14 @@ export const contructorStages = [
     variants: [
       {
         value: 0,
-        label: "Шасси",
+        label: "Шасси"
       },
       {
         value: 1,
-        label: "Самосвал",
-      },
-    ],
-  },
+        label: "Самосвал"
+      }
+    ]
+  }
 ];
 export const models = [
   {
@@ -62,6 +62,59 @@ export const models = [
     whileBase: 0,
     powerFilter: 0,
     typeCore: 0,
+    frontEquipment: [
+      {
+        id: 0,
+        name: "Фронтальная мойка",
+        enName: "washer",
+        series: [
+          {
+            id: 0,
+            serName: "МФ300/20",
+            enName: "MF30020",
+            img: "../../../../../images/.png",
+            options: [
+              {
+                name: "МФ300",
+                enName: "mf30020",
+                cost: "114631",
+                nalogCost: "142631",
+                time: "10"
+              },
+              {
+                name: "МП1000",
+                enName: "mp1000",
+                cost: "31800",
+                nalogCost: "37400",
+                time: "2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: 1,
+        name: "Отвалы Giletta",
+        enName: "plough",
+        series: [
+          {
+            id: 0,
+            serName: "ТН34",
+            enName: "tn34",
+            img: "../../../../../images/.png",
+            options: [
+              {
+                name: "ТН34",
+                enName: "tn34",
+                cost: "262500",
+                nalogCost: "265300",
+                time: "1"
+              }
+            ]
+          }
+        ]
+      }
+    ],
     topEquipment: [
       {
         id: 0,
@@ -83,7 +136,7 @@ export const models = [
                     enName: "КН5036",
                     cost: 611000,
                     nalogCost: 0,
-                    time: 0,
+                    time: 0
                   },
                   {
                     id: 1,
@@ -91,7 +144,7 @@ export const models = [
                     enName: "",
                     cost: 266667,
                     nalogCost: 0,
-                    time: 0,
+                    time: 0
                   },
                   {
                     id: 2,
@@ -99,7 +152,7 @@ export const models = [
                     enName: "",
                     cost: 109000,
                     nalogCost: 0,
-                    time: 0,
+                    time: 0
                   },
                   {
                     id: 3,
@@ -107,7 +160,7 @@ export const models = [
                     enName: "",
                     cost: 71300,
                     nalogCost: 0,
-                    time: 0,
+                    time: 0
                   },
                   {
                     id: 4,
@@ -115,7 +168,7 @@ export const models = [
                     enName: "",
                     cost: 26128,
                     nalogCost: 0,
-                    time: 0,
+                    time: 0
                   },
                   {
                     id: 5,
@@ -123,7 +176,7 @@ export const models = [
                     enName: "",
                     cost: 31354,
                     nalogCost: 0,
-                    time: 0,
+                    time: 0
                   },
                   {
                     id: 6,
@@ -131,7 +184,7 @@ export const models = [
                     enName: "",
                     cost: 3834,
                     nalogCost: 0,
-                    time: 0,
+                    time: 0
                   },
                   {
                     id: 7,
@@ -139,7 +192,7 @@ export const models = [
                     enName: "",
                     cost: 55000,
                     nalogCost: 0,
-                    time: 0,
+                    time: 0
                   },
                   {
                     id: 8,
@@ -147,9 +200,9 @@ export const models = [
                     enName: "",
                     cost: 81667,
                     nalogCost: 0,
-                    time: 0,
-                  },
-                ],
+                    time: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -158,9 +211,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -169,9 +222,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 3,
@@ -180,11 +233,11 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
           },
           {
             id: 1,
@@ -200,65 +253,65 @@ export const models = [
                     enName: "",
                     cost: 866000,
                     nalogCost: 0,
-                    time: 0,
+                    time: 0
                   },
                   {
                     name: "Бункер из нержавейки (доплата)",
                     enName: "",
                     cost: 357500,
                     nalogCost: 0,
-                    time: 0,
+                    time: 0
                   },
                   {
                     name: "система быстросъемности Giletta+МК P3",
                     enName: "",
                     cost: 71300,
                     nalogCost: 0,
-                    time: 0,
+                    time: 0
                   },
                   {
                     name: "установка на шасси (обычная)",
                     enName: "",
                     cost: 26128,
                     nalogCost: 0,
-                    time: 0,
+                    time: 0
                   },
                   {
                     name: "установка на шасси TwistLock",
                     enName: "",
                     cost: 31354,
                     nalogCost: 0,
-                    time: 0,
+                    time: 0
                   },
                   {
                     name: "Боковые козырьки",
                     enName: "",
                     cost: 3834,
                     nalogCost: 0,
-                    time: 0,
+                    time: 0
                   },
                   {
                     name: "Увеличение объема до 8 м3",
                     enName: "",
                     cost: 55000,
                     nalogCost: 0,
-                    time: 0,
+                    time: 0
                   },
                   {
                     name: "Увеличение объема НЕРЖАВЕЙКИ до 8 м3",
                     enName: "",
                     cost: 81667,
                     nalogCost: 0,
-                    time: 0,
+                    time: 0
                   },
                   {
                     name: "Тент против атмосферных осадков",
                     enName: "",
                     cost: 52500,
                     nalogCost: 0,
-                    time: 0,
-                  },
-                ],
+                    time: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -267,9 +320,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -278,9 +331,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 3,
@@ -289,11 +342,11 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
           },
           {
             id: 2,
@@ -307,9 +360,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -318,9 +371,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -329,13 +382,13 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
-          },
-        ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         id: 1,
@@ -354,9 +407,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -365,9 +418,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -376,9 +429,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 3,
@@ -387,9 +440,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 4,
@@ -398,9 +451,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 5,
@@ -409,9 +462,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 6,
@@ -420,13 +473,13 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
-          },
-        ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         id: 2,
@@ -445,9 +498,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -456,9 +509,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -467,11 +520,11 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
           },
           {
             id: 1,
@@ -485,9 +538,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -496,9 +549,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -507,15 +560,54 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
-          },
-        ],
-      },
+                    cost: 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
     ],
+    centerEquipment: [
+      {
+        id: 0,
+        name: "Щетки",
+        enName: "brush",
+        series: [
+          {
+            id: 0,
+            serName: "ОМП220",
+            enName: "omp220",
+            img: "../../../../../images/.png",
+            options: [
+              {
+                name: "ОМП220",
+                enName: "omp220",
+                cost: "68445",
+                nalogCost: "85245",
+                time: "6"
+              }
+            ]
+          },
+          {
+            id: 0,
+            serName: "ОМП253",
+            enName: "omp253",
+            img: "../../../../../images/.png",
+            options: [
+              {
+                name: "ОМП253",
+                enName: "omp253",
+                cost: "80106",
+                nalogCost: "",
+                time: ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     modelName: "КАМАЗ 53605-3954",
@@ -541,9 +633,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -552,9 +644,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -563,9 +655,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 3,
@@ -574,11 +666,11 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
           },
           {
             id: 1,
@@ -592,9 +684,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -603,9 +695,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -614,9 +706,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 3,
@@ -625,11 +717,11 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
           },
           {
             id: 2,
@@ -643,9 +735,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -654,9 +746,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -665,13 +757,13 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
-          },
-        ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         id: 1,
@@ -690,9 +782,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -701,9 +793,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -712,9 +804,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 3,
@@ -723,9 +815,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 4,
@@ -734,9 +826,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 5,
@@ -745,9 +837,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 6,
@@ -756,13 +848,13 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
-          },
-        ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         id: 2,
@@ -781,9 +873,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -792,9 +884,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -803,11 +895,11 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
           },
           {
             id: 1,
@@ -821,9 +913,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -832,9 +924,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -843,15 +935,15 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
-          },
-        ],
-      },
-    ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     modelName: "КАМАЗ 65115-3971",
@@ -877,9 +969,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -888,9 +980,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -899,9 +991,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 3,
@@ -910,11 +1002,11 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
           },
           {
             id: 1,
@@ -928,9 +1020,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -939,9 +1031,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -950,9 +1042,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 3,
@@ -961,11 +1053,11 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
           },
           {
             id: 2,
@@ -979,9 +1071,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -990,9 +1082,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -1001,13 +1093,13 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
-          },
-        ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         id: 1,
@@ -1026,9 +1118,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -1037,9 +1129,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -1048,9 +1140,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 3,
@@ -1059,9 +1151,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 4,
@@ -1070,9 +1162,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 5,
@@ -1081,9 +1173,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 6,
@@ -1092,13 +1184,13 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
-          },
-        ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         id: 2,
@@ -1117,9 +1209,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -1128,9 +1220,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -1139,11 +1231,11 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
           },
           {
             id: 1,
@@ -1157,9 +1249,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -1168,9 +1260,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -1179,15 +1271,15 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
-          },
-        ],
-      },
-    ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     modelName: "КАМАЗ 65115-6058",
@@ -1213,9 +1305,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -1224,9 +1316,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -1235,9 +1327,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 3,
@@ -1246,11 +1338,11 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
           },
           {
             id: 1,
@@ -1264,9 +1356,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -1275,9 +1367,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -1286,9 +1378,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 3,
@@ -1297,11 +1389,11 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
           },
           {
             id: 2,
@@ -1315,9 +1407,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -1326,9 +1418,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -1337,13 +1429,13 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
-          },
-        ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         id: 1,
@@ -1362,9 +1454,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -1373,9 +1465,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -1384,9 +1476,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 3,
@@ -1395,9 +1487,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 4,
@@ -1406,9 +1498,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 5,
@@ -1417,9 +1509,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 6,
@@ -1428,13 +1520,13 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
-          },
-        ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         id: 2,
@@ -1453,9 +1545,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -1464,9 +1556,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -1475,11 +1567,11 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
           },
           {
             id: 1,
@@ -1493,9 +1585,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -1504,9 +1596,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -1515,15 +1607,15 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
-          },
-        ],
-      },
-    ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     modelName: "КАМАЗ 43253-3010-28",
@@ -1549,9 +1641,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -1560,9 +1652,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -1571,9 +1663,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 3,
@@ -1582,11 +1674,11 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
           },
           {
             id: 1,
@@ -1600,9 +1692,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -1611,9 +1703,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -1622,9 +1714,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 3,
@@ -1633,11 +1725,11 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
           },
           {
             id: 2,
@@ -1651,9 +1743,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -1662,9 +1754,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -1673,13 +1765,13 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
-          },
-        ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         id: 1,
@@ -1698,9 +1790,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -1709,9 +1801,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -1720,9 +1812,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 3,
@@ -1731,9 +1823,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 4,
@@ -1742,9 +1834,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 5,
@@ -1753,9 +1845,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 6,
@@ -1764,13 +1856,13 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
-          },
-        ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         id: 2,
@@ -1789,9 +1881,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -1800,9 +1892,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -1811,11 +1903,11 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
+                    cost: 0
+                  }
+                ]
+              }
+            ]
           },
           {
             id: 1,
@@ -1829,9 +1921,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 1,
@@ -1840,9 +1932,9 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
+                    cost: 0
+                  }
+                ]
               },
               {
                 id: 2,
@@ -1851,14 +1943,41 @@ export const models = [
                   {
                     name: "",
                     enName: "",
-                    cost: 0,
-                  },
-                ],
-              },
-            ],
-          },
-        ],
-      },
-    ],
-  },
+                    cost: 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 ];
+
+const qwe = {
+  frontEquipment: [
+    {
+      id: 0,
+      name: "Фронтальная мойка",
+      enName: "washer",
+      series: [
+        {
+          id: 0,
+          name: "МФ300/20",
+          enName: "mf30020",
+          img: "../../../../../images/KH.png",
+          options: [
+            {
+              name: "МФ300",
+              enName: "mf30020",
+              cost: "114631",
+              nalogCost: "",
+              time: ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};

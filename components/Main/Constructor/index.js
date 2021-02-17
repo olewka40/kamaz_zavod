@@ -13,6 +13,8 @@ import StepLabel from "@material-ui/core/StepLabel";
 import { SeriesConstructor } from "./ModelConstructor/SeriesConstructor";
 import { SerialModel } from "./ModelConstructor/SeriesConstructor/SerialModel";
 import { OptionsConctructor } from "./ModelConstructor/SeriesConstructor/SerialModel/OptionsConstructor";
+import { Front } from "./Front";
+import { Center } from "./Center";
 
 export const Constructor = memo(() => {
   const { control, handleSubmit } = useForm();
@@ -43,7 +45,6 @@ export const Constructor = memo(() => {
     setResult(results);
     setStatus(true);
   };
-  console.log(modelConstructorResult);
   const continueToConf = () => {
     setOpenSelModel(true);
   };
@@ -60,9 +61,7 @@ export const Constructor = memo(() => {
   const handleReset = () => {
     setActiveStep(0);
   };
-  console.log(serModConstrRes, 123123123);
-  console.log(serModConstrResArray, 123123123);
-  console.log(optionsArray, 136136136136);
+
   return (
     <Container>
       <Stepper activeStep={activeStep} orientation="vertical">
@@ -236,19 +235,30 @@ export const Constructor = memo(() => {
             </Button>
           </StepContent>
         </Step>
+
+        <Button onClick={handleReset}>Сбросить конфигурацию</Button>
       </Stepper>
+      {selectedModel !== "" && (
+        <FrontConstructor>
+          <Front selectedModel={selectedModel} />
+        </FrontConstructor>
+      )}
+      {selectedModel !== "" && (
+        <CenterConstructor>
+          <Center selectedModel={selectedModel} />
+        </CenterConstructor>
+      )}
     </Container>
   );
 });
 
 const Container = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 45%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 60%;
   height: 100%;
-  background-color: cyan;
 `;
 export const StyledSelect = styled(Select)`
   width: 200px;
@@ -259,4 +269,10 @@ export const StyledButton = styled(Button)`
 
 export const Params = styled.div`
   padding: 5px 10px;
+`;
+export const FrontConstructor = styled.div`
+  display: flex;
+`;
+export const CenterConstructor = styled.div`
+  display: flex;
 `;

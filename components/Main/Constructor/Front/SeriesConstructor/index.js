@@ -10,7 +10,7 @@ export const SeriesConstructor = memo(
     setSeriesConstructorResult,
     setSeriesConstructorResultArray
   }) => {
-    const { setImage } = useContext(DataContext);
+    const { setFrontImage } = useContext(DataContext);
 
     const modelConstructorResultFiltred = modelConstructorResultArray.filter(
       e => e.enName === modelConstructorResult
@@ -27,7 +27,7 @@ export const SeriesConstructor = memo(
                 e => e.serName === n.target.value
               )
             );
-            setImage(n.target.value);
+            setFrontImage(n.target.value);
           }}
         >
           {modelConstructorResultFiltred[0].series.map(ser => (

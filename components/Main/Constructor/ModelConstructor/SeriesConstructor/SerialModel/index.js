@@ -12,9 +12,6 @@ export const SerialModel = ({
   setSerModConstrRes,
   setSerModConstrResArray
 }) => {
-  console.log(seriesConstructorResult, seriesConstructorResultArray);
-  console.log(seriesConstructorResultArray, 1231231);
-
   return (
     <Container>
       <StyledSelect

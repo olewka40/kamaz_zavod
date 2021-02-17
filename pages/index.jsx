@@ -29,9 +29,26 @@ const GlobalStyle = createGlobalStyle`
 
 const App = () => {
   const [image, setImage] = useState("");
+  const [frontImage, setFrontImage] = useState("");
+  const [betweenImage, setBetweenImage] = useState("");
+  const [sideImage, setSideImage] = useState("");
+  const [backImage, setBackImage] = useState("");
 
   return (
-    <DataContext.Provider value={{ image, setImage }}>
+    <DataContext.Provider
+      value={{
+        image,
+        setImage,
+        frontImage,
+        setFrontImage,
+        betweenImage,
+        setBetweenImage,
+        sideImage,
+        setSideImage,
+        backImage,
+        setBackImage
+      }}
+    >
       <MainComponent>
         <GlobalStyle />
         <Header />
