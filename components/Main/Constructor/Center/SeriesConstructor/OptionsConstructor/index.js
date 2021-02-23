@@ -7,26 +7,14 @@ export const OptionsConctructor = ({
   serModConstrResArray,
   setOptionsArray
 }) => {
+
   const onSubmit = values => {
     setOptionsArray(values);
-
-    console.log(values);
-    // const key = Object.keys(values);
-    // const statusArray = Object.entries(values).filter(e => e[1] === true);
   };
-  console.log(
-    serModConstrResArray[0].options.map(e => e),
-    12312323
-  );
-  const testRes = () => {
-    console.log(`25tgg`);
-  };
-
   return (
     <div>
       <Form
         onSubmit={onSubmit}
-        initialValues={{}}
         render={({ handleSubmit, form, submitting, pristine, values }) => (
           <form onSubmit={handleSubmit}>
             <Container>
@@ -35,21 +23,12 @@ export const OptionsConctructor = ({
                   <label>
                     {e.name} - {e.cost}
                   </label>
-                  <Field
-                    name={e.name}
-                    initialValue={false}
-                    component="input"
-                    type="checkbox"
-                  />
+                  <Field name={e.name} component="input" type="checkbox" />
                 </Options>
               ))}
             </Container>
             <div className="buttons">
-              <button
-                onClick={testRes}
-                type="submit"
-                disabled={submitting || pristine}
-              >
+              <button type="submit" disabled={submitting || pristine}>
                 Submit
               </button>
             </div>

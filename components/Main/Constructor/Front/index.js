@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import styled from "styled-components";
 import {
   MenuItem,
@@ -11,9 +11,12 @@ import Button from "@material-ui/core/Button";
 import { models } from "../../../../constants/config";
 import { StyledSelect } from "../index";
 import { SeriesConstructor } from "./SeriesConstructor";
+import { OptionsConctructor } from "./SeriesConstructor/OptionsConstructor";
+import { DataContext } from "../../../../context/DataContext";
 
 export const Front = ({ selectedModel }) => {
   const [activeStep, setActiveStep] = useState(0);
+  const { setFrontImage } = useContext(DataContext);
   const [modelConstructorResult, setModelConstructorResult] = useState(0);
   const [
     modelConstructorResultArray,
@@ -24,6 +27,7 @@ export const Front = ({ selectedModel }) => {
     seriesConstructorResultArray,
     setSeriesConstructorResultArray
   ] = useState(0);
+  const [optionsArray, setOptionsArray] = useState("");
 
   const currentModel = models.filter(e => e.value === selectedModel);
   const handleNext = () => {
@@ -36,6 +40,7 @@ export const Front = ({ selectedModel }) => {
 
   const handleReset = () => {
     setActiveStep(0);
+    setFrontImage("");
   };
 
   return (
@@ -76,6 +81,28 @@ export const Front = ({ selectedModel }) => {
               modelConstructorResultArray={modelConstructorResultArray}
               setSeriesConstructorResult={setSeriesConstructorResult}
               setSeriesConstructorResultArray={setSeriesConstructorResultArray}
+            />
+
+            <Button disabled={activeStep === 0} onClick={handleBack}>
+              Back
+            </Button>
+            <Button
+              type="submit"
+              variant="contained"
+              color="primary"
+              onClick={handleNext}
+            >
+              {activeStep === [].length - 1 ? "Finish" : "Next"}
+            </Button>
+          </StepContent>
+        </Step>
+        <Step>
+          <StepLabel>Выбор опций переднего оборудования</StepLabel>
+          <StepContent>
+            <OptionsConctructor
+              serModConstrRes={seriesConstructorResult}
+              serModConstrResArray={seriesConstructorResultArray}
+              setOptionsArray={setOptionsArray}
             />
 
             <Button disabled={activeStep === 0} onClick={handleBack}>

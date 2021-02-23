@@ -1,4 +1,4 @@
-import React, { useState, memo } from "react";
+import React, { useState, memo, useContext } from "react";
 import styled from "styled-components";
 import { Select, InputLabel, MenuItem, FormControl } from "@material-ui/core";
 import { Controller, useForm } from "react-hook-form";
@@ -15,9 +15,17 @@ import { SerialModel } from "./ModelConstructor/SeriesConstructor/SerialModel";
 import { OptionsConctructor } from "./ModelConstructor/SeriesConstructor/SerialModel/OptionsConstructor";
 import { Front } from "./Front";
 import { Center } from "./Center";
+import { DataContext } from "../../../context/DataContext";
 
 export const Constructor = memo(() => {
   const { control, handleSubmit } = useForm();
+  const {
+    setImage,
+    setFrontImage,
+    setBetweenImage,
+    setSideImage,
+    setBackImage
+  } = useContext(DataContext);
   const [result, setResult] = useState([]);
   const [status, setStatus] = useState(false);
   const [selectedModel, setSelectedModel] = useState("");
@@ -60,6 +68,11 @@ export const Constructor = memo(() => {
 
   const handleReset = () => {
     setActiveStep(0);
+    setImage("");
+    setFrontImage("");
+    setBetweenImage("");
+    setSideImage("");
+    setBackImage("");
   };
 
   return (
@@ -218,25 +231,27 @@ export const Constructor = memo(() => {
             </Button>
           </StepContent>
         </Step>
-        <Step>
-          <StepLabel> Финал </StepLabel>
-          <StepContent>
-            123123123123123123123
-            <Button disabled={activeStep === 0} onClick={handleBack}>
-              Back
-            </Button>
-            <Button
-              type="submit"
-              variant="contained"
-              color="primary"
-              onClick={handleNext}
-            >
-              next
-            </Button>
-          </StepContent>
-        </Step>
+        {/*<Step>*/}
+        {/*  <StepLabel> Финал </StepLabel>*/}
+        {/*  <StepContent>*/}
+        {/*    123123123123123123123*/}
+        {/*    <Button disabled={activeStep === 0} onClick={handleBack}>*/}
+        {/*      Back*/}
+        {/*    </Button>*/}
+        {/*    <Button*/}
+        {/*      type="submit"*/}
+        {/*      variant="contained"*/}
+        {/*      color="primary"*/}
+        {/*      onClick={handleNext}*/}
+        {/*    >*/}
+        {/*      next*/}
+        {/*    </Button>*/}
+        {/*  </StepContent>*/}
+        {/*</Step>*/}
 
-        <Button onClick={handleReset}>Сбросить конфигурацию</Button>
+        <Button onClick={handleReset} variant="contained" color="primary">
+          Сбросить конфигурацию
+        </Button>
       </Stepper>
       {selectedModel !== "" && (
         <FrontConstructor>

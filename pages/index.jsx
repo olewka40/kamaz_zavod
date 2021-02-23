@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { DataContext } from "../context/DataContext";
 import styled, { createGlobalStyle } from "styled-components";
 import { Header } from "../components/Header";
 import { Main } from "../components/Main";
+import axios from "axios";
 
 const MainComponent = styled.div`
   display: flex;
@@ -34,6 +35,23 @@ const App = () => {
   const [sideImage, setSideImage] = useState("");
   const [backImage, setBackImage] = useState("");
 
+  const [topResult, setTopResult] = useState("");
+  const [centerResult, setCenterResult] = useState("");
+  const [frontResult, setFrontResult] = useState("");
+
+  const [eur, setEur] = useState("");
+  const [usd, setUsd] = useState("");
+  const getCourses = async () => {
+    const { data } = await axios.get(
+      "https://www.cbr-xml-daily.ru/daily_json.js"
+    );
+    setEur(data.Valute.EUR.Previous);
+    setUsd(data.Valute.USD.Previous);
+  };
+  useEffect(() => {
+    getCourses().then(r => r);
+  }, []);
+
   return (
     <DataContext.Provider
       value={{
@@ -46,7 +64,13 @@ const App = () => {
         sideImage,
         setSideImage,
         backImage,
-        setBackImage
+        setBackImage,
+        topResult,
+        setTopResult,
+        centerResult,
+        setCenterResult,
+        frontResult,
+        setFrontResult
       }}
     >
       <MainComponent>

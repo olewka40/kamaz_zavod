@@ -24,7 +24,7 @@ export const SeriesConstructor = memo(
             setSeriesConstructorResult(n.target.value);
             setSeriesConstructorResultArray(
               modelConstructorResultFiltred[0].series.filter(
-                e => e.serName === n.target.value
+                e => e.enName === n.target.value
               )
             );
             setBetweenImage(n.target.value);

@@ -1955,29 +1955,6 @@ export const models = [
   }
 ];
 
-const qwe = {
-  frontEquipment: [
-    {
-      id: 0,
-      name: "Фронтальная мойка",
-      enName: "washer",
-      series: [
-        {
-          id: 0,
-          name: "МФ300/20",
-          enName: "mf30020",
-          img: "../../../../../images/KH.png",
-          options: [
-            {
-              name: "МФ300",
-              enName: "mf30020",
-              cost: "114631",
-              nalogCost: "",
-              time: ""
-            }
-          ]
-        }
-      ]
-    }
-  ]
-};
+export const KH = 2800;
+export const SH = 3200;
+export const UH = 4300;

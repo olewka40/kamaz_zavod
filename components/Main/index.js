@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Constructor } from "./Constructor";
 import { Images } from "./Images";
@@ -8,7 +8,7 @@ export const Main = () => {
   return (
     <MainContainer>
       <WorkSpace>
-        <Constructor />
+        <Constructor  />
         <Images />
       </WorkSpace>
       <Result />
